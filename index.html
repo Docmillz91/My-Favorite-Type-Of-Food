@@ -7,23 +7,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Favorite Food</title>
         <style>
-            
             body {
                 font-family: georgia;
             }
-            
-    
             
             article {
                 margin: 4em;
         
             }
             
-            h1, h2, footer {
+            header, h2, footer, section {
                 text-align: center;
             }
             
-            h1 {
+            h1, section, h3 {
                 padding: 1.2em;
             }
             
@@ -33,13 +30,21 @@
 
             }
             
+            h3 {
+                font-size: 1.5rem;
+            }
+            
+            main p {
+                display: inline-block;
+            }
+            
             .link {
                 text-align: center;
                 padding-top: 1em;
             }
             
             aside {
-                margin: 4em;
+                margin: 6em;
             }
             
             li {
@@ -68,7 +73,6 @@
                 font-style: italic;
               
             }
-            
         </style>
     </head>
     
@@ -81,21 +85,36 @@
 
       
 
-<!-- semantic structure 3 article/section/aside, 1 unorder list, 1 detail list and a footer -->
+<!-- semantic structure: header, section, 3 article/aside/unorder-list/detail-list and a footer -->
 
 
+<header>
 <h1 style="background-color:#B5C18E;">My Favorite Food</h1>
+</header>
 
 
 
-<!-- I created the articles with a section and an aside element. Each article is about a specific type of food I like, the section element has the restaurants information/link and the aside element contains the food I order -->
 
+<!-- I created a section element followed by 3 articles and aside elements. Each article is about a specific type of food I like, and the aside element contains the food I order with price -->
+
+
+<section>
+    <h3>Top 3 Restaurants</h3>
+    
+    <p>The food from these locations are my favorite because they use really good ingredients and the food has consistency.</p>
+    
+    <p> I enjoy thai food because of the mixture of herbs and spicy, I highly recommend this experince.</p>
+    
+    <p>Lupes Mexican food brings me comfort and I enjoy each visite, the food has an amazing grill texture and fresh flavors</p>
+    
+    <p>Little Sheep is my personal favorite, it's a vibe. It's fun to explore cooking with otherrs and mixing ingredients.</p>
+</section>
 
 <article>
   
    <h2>Thai Food</h2>
   
-    <section> 
+
     
   
 
@@ -107,7 +126,8 @@
   
 <p class="link"><strong>To Order Online: </strong><a href="https://www.bahnthai.net/bahnthaimenu">Visit The Company Website!</a></p>
 
-</section>
+</article>
+
 
 <aside>
  
@@ -139,11 +159,10 @@
 </dl>
 
 </aside>
-</article>
 
 <article>
      <h2>Mexican Food</h2>
- <section>
+
      
       
 
@@ -154,7 +173,8 @@
 <p>We are always introducing new creative items to our menu, so our guests never know what tasty new items they might find with authentic recipes and dishes. We are happy and proud to be serving Southern California and our local communities. </p>
 
 <p class="link"><strong>To Order Online: </strong><a href="https://order.toasttab.com/online/lupes-mexican-eatery-sd-7621-linda-vista-rd-101" target="_blank">Visit The Company Website!</a></p>
- </section>
+</article>
+
 
 <aside>
     
@@ -188,14 +208,13 @@
 </dl>
 
 </aside>
-</article>
   
 <article>
    
    <h2>Mongolian Food</h2>
 
    
-<section>
+
        
 <h3>Little Sheep</h3>
 
@@ -203,7 +222,8 @@
 
 <p class="link"><strong>To Order Online: </strong><a href="https://mongolianhotpot.com" target="_blank">Visit The Company Website!</a></p>
 
-</section>
+</article>
+
 <aside>
    
    <dl>
@@ -221,7 +241,6 @@
 
 
 </aside>
-</article>
 
 <footer>&copy;2024</footer>
 
